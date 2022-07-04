@@ -2,11 +2,13 @@
 
 Starting boilerplate of [Strapi](https://strapi.io/) application
 
+[![GitHub Actions CI](https://github.com/aleksandrbagrov/hexlet-ci-app/workflows/GitHub Actions CI/badge.svg)](https://github.com/aleksandrbagrov/hexlet-ci-app/actions)
+
 ## System requirements
 
-* NodeJS >= 12 <= 16
-* NPM >= 6.x
-* Make
+- NodeJS >= 12 <= 16
+- NPM >= 6.x
+- Make
 
 ## Using
 
