@@ -2,7 +2,7 @@
 
 Starting boilerplate of [Strapi](https://strapi.io/) application
 
-[![GitHub Actions CI](https://github.com/aleksandrbagrov/hexlet-ci-app/workflows/GitHub Actions CI/badge.svg)](https://github.com/aleksandrbagrov/hexlet-ci-app/actions)
+[![GitHub Actions CI](https://github.com/aleksandrbagrov/hexlet-ci-app/workflows/GitHub-Actions-CI/badge.svg)](https://github.com/aleksandrbagrov/hexlet-ci-app/actions)
 
 ## System requirements
 
