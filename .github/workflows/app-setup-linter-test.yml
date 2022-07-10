@@ -16,7 +16,7 @@ jobs:
     strategy:
       # Node versions list
       matrix:
-        node-version: [12, 14, 16]
+        node-version: [12.x, 14.x, 16.x]
 
     steps:
       # Check-out repository under GitHub workspace
@@ -32,8 +32,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - name: Run Snyk to check for vulnerabilities
-        # uses: snyk/actions/node@master
-        run: npx snyk test --severity-threshold=high
+        uses: snyk/actions/node@master
+        # run: npx snyk test --severity-threshold=high
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       - run: make install
