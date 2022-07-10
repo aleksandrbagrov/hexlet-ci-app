@@ -21,7 +21,7 @@ jobs:
     steps:
       # Check-out repository under GitHub workspace
       # https://github.com/actions/checkout
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
         # Step's name
       - name: Use Node.js ${{ matrix.node-version }}
         # Configures the node version used on GitHub-hosted runners
@@ -32,7 +32,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/node@master
+        # uses: snyk/actions/node@master
+        run: npx snyk test --severity-threshold=high
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       - run: make install
